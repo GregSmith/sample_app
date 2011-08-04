@@ -24,7 +24,7 @@ describe PagesController do
     end
   end
   
-  it "should have correct title" do
+  it "Home page should have correct title" do
     get 'home'
     response.should have_selector("title",
                     :content => "Ruby on Rails Tutorial Sample App | Home")
