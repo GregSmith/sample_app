@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   attr_accessor :password
   attr_accessible :name, :email, :password, :password_confirmation
   
+  has_many :microposts, :dependent => :destroy
+  
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
   validates :name, :presence => true,
@@ -43,6 +45,11 @@ class User < ActiveRecord::Base
        user = find_by_id(id)
        return nil  if user.nil?
        return user if user.salt == cookie_salt
+     end
+     
+     def feed
+       # this is preliminary - see ch. 12 for rest
+       Micropost.where("user_id = ?", id)
      end
 
   private
