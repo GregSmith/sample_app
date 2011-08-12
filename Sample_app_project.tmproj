@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>public/stylesheets/custom.css</string>
+	<string>app/views/pages/home.html.erb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,17 +18,17 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>162</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Gemfile</key>
+		<key>app/controllers/microposts_controller.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>27</integer>
+				<integer>35</integer>
 				<key>line</key>
-				<integer>8</integer>
+				<integer>22</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -47,6 +47,34 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
+			<integer>3</integer>
+		</dict>
+		<key>app/models/micropost.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>10</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/models/relationship.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>43</integer>
+				<key>line</key>
+				<integer>7</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
 		<key>app/models/user.rb</key>
@@ -54,51 +82,67 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>65</integer>
 				<key>line</key>
-				<integer>39</integer>
+				<integer>24</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>25</integer>
+			<integer>12</integer>
 		</dict>
-		<key>app/views/users/new.html.erb</key>
+		<key>app/views/pages/home.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>57</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>11</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/views/users/show.html.erb</key>
+		<key>app/views/shared/_stats.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>1</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>6</integer>
+				<key>line</key>
+				<integer>20</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
 		</dict>
 		<key>config/routes.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>18</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>7</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -119,63 +163,81 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>public/stylesheets/custom.css</key>
+		<key>lib/tasks/sample_data.rake</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>18</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>138</integer>
+				<integer>44</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>111</integer>
+			<integer>17</integer>
 		</dict>
-		<key>spec/controllers/users_controller_spec.rb</key>
+		<key>spec/controllers/pages_controller_spec.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>7</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>34</integer>
+				<integer>39</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>22</integer>
+			<integer>13</integer>
+		</dict>
+		<key>spec/models/relationship_spec.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>38</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>24</integer>
 		</dict>
 		<key>spec/models/user_spec.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>31</integer>
+				<integer>4</integer>
 				<key>line</key>
-				<integer>137</integer>
+				<integer>65</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>117</integer>
+			<integer>56</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
+		<string>spec/models/relationship_spec.rb</string>
 		<string>spec/models/user_spec.rb</string>
+		<string>app/models/relationship.rb</string>
 		<string>app/models/user.rb</string>
-		<string>spec/controllers/users_controller_spec.rb</string>
-		<string>app/views/users/new.html.erb</string>
-		<string>Gemfile</string>
+		<string>lib/tasks/sample_data.rake</string>
+		<string>config/routes.rb</string>
+		<string>spec/controllers/pages_controller_spec.rb</string>
+		<string>app/views/shared/_stats.html.erb</string>
+		<string>app/views/pages/home.html.erb</string>
+		<string>app/controllers/microposts_controller.rb</string>
 		<string>app/controllers/users_controller.rb</string>
-		<string>app/views/users/show.html.erb</string>
-		<string>public/stylesheets/custom.css</string>
+		<string>app/models/micropost.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{800, 176}, {465, 555}}</string>
+	<string>{{606, 223}, {659, 555}}</string>
 </dict>
 </plist>
